@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './NavItem.scss';
 
 export default function NavItem({ NavItems }) {
@@ -9,13 +9,7 @@ export default function NavItem({ NavItems }) {
         return (
           <div className='navbar__item' key={item.id}>
             <li>
-              <NavLink
-                exact={true}
-                to={item.tolink}
-                activeClassName='menuItem--active'
-              >
-                {item.name}
-              </NavLink>
+              <Link to={item.tolink}>{item.name}</Link>
             </li>
           </div>
         );
