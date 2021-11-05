@@ -3,7 +3,7 @@ import moment from 'moment';
 import { Link } from 'react-router-dom';
 import './TopPosts.scss';
 
-export default function TopPosts({ category, articles }) {
+export default function TopPosts({ articles }) {
   return (
     <div className='topPosts'>
       {articles.map((article) => {
@@ -20,7 +20,7 @@ export default function TopPosts({ category, articles }) {
                   </div>
                   <div className='topPost__link__details__info'>
                     <span className='topPost__link__details__info__name'>
-                      {category.name}&nbsp;&nbsp;
+                      {article.categoryName}&nbsp;&nbsp;
                     </span>
                     <span className='topPost__link__details__info__date'>
                       / {moment(article.date).format('MMM DD, YYYY')}
@@ -47,7 +47,7 @@ export default function TopPosts({ category, articles }) {
                   </div>
                   <div className='topPost__link__details__info'>
                     <span className='topPost__link__details__info__name'>
-                      {category.name}&nbsp;&nbsp;
+                      {article.categoryName}&nbsp;&nbsp;
                     </span>
                     <span className='topPost__link__details__info__date'>
                       / {moment(article.date).format('MMM DD, YYYY')}
