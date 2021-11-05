@@ -3,12 +3,13 @@
 header {
   box-sizing: border-box;
   width: 100%;
-  background: transparent;
-  position: fixed;
   overflow: hidden;
   z-index: 1;
   text-align: center;
   padding-top: 2em;
+  position: sticky;
+  top: 0;
+  background-color: white;
 }
 
 .header__title1 {

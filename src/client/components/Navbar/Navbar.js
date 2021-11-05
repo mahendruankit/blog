@@ -1,12 +1,12 @@
 import React from 'react';
-import NavItems from '../../../MenuItems';
+import Menus from '../../../Menu';
 import NavItem from './NavItem/NavItem';
 import './Navbar.scss';
 
 export default function Navbar() {
   return (
     <ul>
-      <NavItem NavItems={NavItems}></NavItem>
+      <NavItem NavItems={Menus}></NavItem>
     </ul>
   );
 }

@@ -1,9 +1,11 @@
 import React from 'react';
+import CategoryTitle from '../../components/CategoryTitle/CategoryTitle';
+import './Technology.scss';
 
 export default function technology() {
   return (
     <div className='content technology'>
-      <h1>Technology</h1>
+      <CategoryTitle title='Technology' />
     </div>
   );
 }
