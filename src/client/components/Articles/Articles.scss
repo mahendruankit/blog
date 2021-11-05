@@ -1,0 +1,57 @@
+@import '../../variables.scss';
+
+.articles {
+  font-family: $font-family;
+  padding: 1em;
+}
+
+.articles a {
+  text-decoration: none;
+  color: $link-color;
+}
+
+.articles hr {
+  border: 1px solid $secondary-color;
+  margin: 0;
+  margin-left: 0.3em;
+  width: 100%;
+}
+
+.article {
+  margin: 1em 1em 4em 0em;
+  display: flex;
+}
+
+.article__thumbnail {
+  text-align: left;
+}
+
+.article__thumbnail img {
+  width: 20em;
+  height: auto;
+}
+
+.article__details {
+  margin-left: 2em;
+}
+
+.article__details__name {
+  font-size: 1.5em;
+}
+
+.article__details__content {
+  margin-top: 1em;
+  color: $secondary-color;
+}
+
+.article__details__info {
+  margin-top: 1em;
+}
+
+.article__details__info__name {
+  font-weight: 500;
+}
+
+.article__details__info__date {
+  color: $secondary-color;
+}
