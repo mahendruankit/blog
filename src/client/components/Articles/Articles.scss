@@ -17,41 +17,41 @@
   width: 100%;
 }
 
-.article {
+.article__link {
   margin: 1em 1em 4em 0em;
   display: flex;
 }
 
-.article__thumbnail {
+.article__link__thumbnail {
   text-align: left;
 }
 
-.article__thumbnail img {
+.article__link__thumbnail img {
   width: 20em;
   height: auto;
 }
 
-.article__details {
+.article__link__details {
   margin-left: 2em;
 }
 
-.article__details__name {
+.article__link__details__name {
   font-size: 1.5em;
 }
 
-.article__details__content {
+.article__link__details__content {
   margin-top: 1em;
   color: $secondary-color;
 }
 
-.article__details__info {
+.article__link__details__info {
   margin-top: 1em;
 }
 
-.article__details__info__name {
+.article__link__details__info__name {
   font-weight: 500;
 }
 
-.article__details__info__date {
+.article__link__details__info__date {
   color: $secondary-color;
 }

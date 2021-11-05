@@ -1,0 +1,99 @@
+@import '../../variables.scss';
+
+.topPosts {
+  font-family: $font-family;
+  padding: 1em;
+}
+
+.topPosts a {
+  text-decoration: none;
+  color: $link-color;
+}
+
+.topPosts hr {
+  border: 1px solid $secondary-color;
+  margin: 0;
+  margin-left: 0.3em;
+  width: 100%;
+}
+
+.topPost__link {
+  margin: 1em 0em 1em 0em;
+  display: flex;
+}
+
+.topPost__link__top__details,
+.topPost__link__details {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.topPost__link__top__details {
+  margin-top: 1em;
+}
+
+.topPost__link__top__details__left,
+.topPost__link__top__details__right,
+.topPost__link__details__left,
+.topPost__link__details__right {
+  display: flex;
+  flex-direction: column;
+}
+
+.topPost__link__top__details__left,
+.topPost__link__details__left {
+  flex-basis: 65%;
+}
+
+.topPost__link__top__details__right,
+.topPost__link__details__right {
+  flex-basis: 35%;
+  text-align: right;
+  font-size: 4em;
+  color: $secondary-color;
+  opacity: 20%;
+}
+
+.topPost__link__thumbnail {
+  text-align: left;
+}
+
+.topPost__link__thumbnail img {
+  object-fit: cover;
+  width: 5em;
+  height: 5em;
+}
+
+.topPost__link__top__thumbnail img {
+  height: 15em;
+  width: 100%;
+}
+
+.topPost__link__details {
+  padding-left: 1em;
+}
+
+.topPost__link__top__details__name {
+  font-size: 1.3em;
+}
+
+.topPost__link__details__name {
+  font-size: 1.3em;
+}
+
+.topPost__link__details__info {
+  margin-top: 1em;
+}
+
+.topPost__link__details__info {
+  margin-bottom: 1em;
+}
+
+.topPost__link__details__info__name {
+  font-weight: 500;
+}
+
+.topPost__link__details__info__date {
+  color: $secondary-color;
+}

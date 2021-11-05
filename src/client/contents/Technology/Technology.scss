@@ -2,6 +2,21 @@
 
 .technology {
   font-family: $font-family;
-  text-align: left;
-  width: 60%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.technology__left,
+.technology__right {
+  display: flex;
+  flex-direction: column;
+}
+
+.technology__left {
+  flex-basis: 65%;
+}
+
+.technology__right {
+  flex-basis: 35%;
 }

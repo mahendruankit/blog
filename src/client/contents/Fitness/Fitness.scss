@@ -2,6 +2,21 @@
 
 .fitness {
   font-family: $font-family;
-  text-align: left;
-  width: 60%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.fitness__left,
+.fitness__right {
+  display: flex;
+  flex-direction: column;
+}
+
+.fitness__left {
+  flex-basis: 65%;
+}
+
+.fitness__right {
+  flex-basis: 35%;
 }

@@ -2,6 +2,21 @@
 
 .food {
   font-family: $font-family;
-  text-align: left;
-  width: 60%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.food__left,
+.food__right {
+  display: flex;
+  flex-direction: column;
+}
+
+.food__left {
+  flex-basis: 65%;
+}
+
+.food__right {
+  flex-basis: 35%;
 }

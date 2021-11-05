@@ -2,6 +2,21 @@
 
 .movies {
   font-family: $font-family;
-  text-align: left;
-  width: 60%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.movies__left,
+.movies__right {
+  display: flex;
+  flex-direction: column;
+}
+
+.movies__left {
+  flex-basis: 65%;
+}
+
+.movies__right {
+  flex-basis: 35%;
 }
