@@ -1,0 +1,15 @@
+@import '../../variables.scss';
+
+.shareArticle {
+  color: $secondary-color;
+  margin-bottom: 1.5em;
+}
+
+.shareArticle__icon {
+  font-size: large;
+  margin-right: 0.5em;
+}
+
+.shareArticle__text {
+  font-size: small;
+}

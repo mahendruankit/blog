@@ -4,6 +4,7 @@ import Categories from '../../../CategoriesData';
 import Author from '../../components/Author/Author';
 import Tags from '../../components/Tags/Tags';
 import Claps from '../../components/Claps/Claps';
+import ShareArticle from '../../components/ShareArticle/ShareArticle';
 import './Article.scss';
 
 export default function Article() {
@@ -20,8 +21,12 @@ export default function Article() {
     <div className='content'>
       <div className='article'>
         <div className='article__left'>
-          <Claps claps={article.claps} />
+          <div className='article__left__container'>
+            <Claps claps={article.claps} />
+            <ShareArticle />
+          </div>
         </div>
+
         <div className='article__centre'>
           <div className='article__centre__title'> {article.title}</div>
           <Author

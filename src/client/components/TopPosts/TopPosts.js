@@ -24,7 +24,7 @@ export default function TopPosts({ category, articles }) {
                   </div>
                   <div className='topPost__link__details__info'>
                     <span className='topPost__link__details__info__name'>
-                      {article.categoryName}&nbsp;&nbsp;
+                      {category.name}&nbsp;&nbsp;
                     </span>
                     <span className='topPost__link__details__info__date'>
                       / {moment(article.date).format('MMM DD, YYYY')}
@@ -51,7 +51,7 @@ export default function TopPosts({ category, articles }) {
                   </div>
                   <div className='topPost__link__details__info'>
                     <span className='topPost__link__details__info__name'>
-                      {article.categoryName}&nbsp;&nbsp;
+                      {category.name}&nbsp;&nbsp;
                     </span>
                     <span className='topPost__link__details__info__date'>
                       / {moment(article.date).format('MMM DD, YYYY')}

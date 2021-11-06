@@ -5,6 +5,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  height: 100vh;
 }
 
 .article__left,
@@ -17,7 +18,12 @@
   flex-basis: 20%;
 }
 
+.article__left__container {
+  position: fixed;
+}
+
 .article__centre {
+  overflow: auto;
   flex-basis: 60%;
 }
 
