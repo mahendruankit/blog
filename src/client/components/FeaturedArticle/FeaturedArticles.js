@@ -14,8 +14,10 @@ export default function featuredArticle({ featuredList }) {
         return (
           <Link className='article__link' to={newTo} key={list.category.id}>
             <div className='featuredArticle'>
-              <div className='featuredArticle__thumbnail'>
-                <img src={list.article.thumbnail} alt='featured article' />
+              <div
+                className='featuredArticle__thumbnail'
+                style={{ backgroundImage: `url(${list.article.thumbnail})` }}
+              >
                 <div className='featuredArticle__title'>
                   {list.article.title}
                 </div>
