@@ -1,0 +1,15 @@
+@import '../../variables.scss';
+
+.claps {
+  color: $secondary-color;
+  margin-bottom: 1.5em;
+}
+
+.claps__icon {
+  font-size: large;
+  margin-right: 0.5em;
+}
+
+.claps__count {
+  font-size: small;
+}

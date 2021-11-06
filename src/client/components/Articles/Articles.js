@@ -7,9 +7,14 @@ export default function Articles({ category, articles }) {
   return (
     <div className='articles'>
       {articles.map((article) => {
+        const newTo = {
+          pathname: `/category/${category.id}/article/${article.id}`,
+          param1: 'id',
+        };
+
         return (
           <div className='article' key={article.id}>
-            <Link className='article__link' to='/home'>
+            <Link className='article__link' to={newTo}>
               <div className='article__link__thumbnail'>
                 <img src={article.thumbnail} alt='Article thumbnail' />
               </div>

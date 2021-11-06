@@ -1,0 +1,16 @@
+@import '../../variables.scss';
+
+.tags {
+  color: $secondary-color;
+  width: auto;
+  margin: 1em 1em 1em 0em;
+}
+
+.tag {
+  font-size: small;
+  font-weight: 350;
+  border: 1px solid $tertiary-color;
+  background-color: $tertiary-color;
+  margin: 0.5em 0.5em 0.5em 0em;
+  padding: 0.5em 0.5em 0.5em 0em;
+}

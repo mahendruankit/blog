@@ -1,0 +1,48 @@
+@import '../../variables.scss';
+
+.author {
+  display: flex;
+  font-family: $font-family;
+}
+
+.author__picture img {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: inline-block;
+  height: 5em;
+  width: 5em;
+  border-radius: 2.5em;
+  margin-top: 1em;
+}
+
+.author__picture {
+  flex-basis: 10%;
+}
+
+.author__details {
+  flex-basis: 80%;
+  margin-top: 1em;
+  margin-left: 1em;
+}
+
+.author__social {
+  flex-basis: 10%;
+  margin-top: 3em;
+  margin-left: 1em;
+}
+
+.author__details__name {
+  margin-top: 1em;
+  font-size: small;
+}
+
+.author__details__article {
+  font-size: small;
+  color: $secondary-color;
+  margin-top: 1em;
+}
+
+.author__details__writtenBy {
+  font-size: small;
+  color: $secondary-color;
+}

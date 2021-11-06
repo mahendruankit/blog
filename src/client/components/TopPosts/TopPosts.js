@@ -3,13 +3,17 @@ import moment from 'moment';
 import { Link } from 'react-router-dom';
 import './TopPosts.scss';
 
-export default function TopPosts({ articles }) {
+export default function TopPosts({ category, articles }) {
   return (
     <div className='topPosts'>
       {articles.map((article) => {
+        let newTo = {
+          pathname: `/category/${category.id}/article/${article.id}`,
+          param1: 'id',
+        };
         return article.id === 1 ? (
           <div className='topPost' key={article.id}>
-            <Link className='topPost__link__top' to='/home'>
+            <Link className='topPost__link__top' to={newTo}>
               <div className='topPost__link__top__thumbnail'>
                 <img src={article.thumbnail} alt='Article thumbnail' />
               </div>
@@ -36,7 +40,7 @@ export default function TopPosts({ articles }) {
           </div>
         ) : (
           <div className='topPost' key={article.id}>
-            <Link className='topPost__link' to='/home'>
+            <Link className='topPost__link' to={newTo}>
               <div className='topPost__link__thumbnail'>
                 <img src={article.thumbnail} alt='Article thumbnail' />
               </div>

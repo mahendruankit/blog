@@ -1,0 +1,59 @@
+@import '../../variables.scss';
+
+.article {
+  font-family: $font-family;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.article__left,
+.article__centre .article__right {
+  display: flex;
+  flex-direction: column;
+}
+
+.article__left {
+  flex-basis: 20%;
+}
+
+.article__centre {
+  flex-basis: 60%;
+}
+
+.article__right {
+  flex-basis: 20%;
+}
+
+.article__centre__title {
+  font-size: 2em;
+}
+
+.article__centre__content {
+  font-size: 1em;
+  color: $link-color;
+  margin-top: 2em;
+  white-space: pre-line;
+}
+
+.article__centre__articleImage {
+  margin: 1em;
+  text-align: center;
+}
+
+.article__centre__articleImage img {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: inline-block;
+  height: 15em;
+  width: auto;
+  margin-top: 1em;
+}
+
+.article__centre hr {
+  border: 1px solid $secondary-color;
+  max-width: 100%;
+  margin: 0;
+  margin-left: 0.3em;
+  opacity: 10%;
+}

@@ -21,12 +21,14 @@ import FD2 from '../images/FD2.jpg';
 import FD3 from '../images/FD3.jpg';
 import FD4 from '../images/FD4.jpg';
 
+import react from '../images/react.png';
+
 const images = {
   authors: {
     ziggy: ziggy,
     cookie: cookie,
   },
-  technologyThumbnails: {
+  thumbnails: {
     T1: T1,
     T2: T2,
     T3: T3,
@@ -47,6 +49,9 @@ const images = {
     FD2: FD2,
     FD3: FD3,
     FD4: FD4,
+  },
+  article: {
+    image: react,
   },
 };
 
