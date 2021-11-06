@@ -6,20 +6,20 @@ import Advertisment from '../../components/Advertisment/Advertisment';
 import Articles from '../../components/Articles/Articles';
 import TopPosts from '../../components/TopPosts/TopPosts';
 
-import './Technology.scss';
+import './Category.scss';
 
-export default function Technology() {
-  var category = Categories.filter((c) => c.id === 2)[0];
+export default function Category({ categoryId }) {
+  var category = Categories.filter((c) => c.id === categoryId)[0];
   var techArticles = category.articles;
   var topPostArticles = TopPostsData[0].articles;
   return (
     <div className='content'>
-      <div className='technology'>
-        <div className='technology__left'>
+      <div className='category'>
+        <div className='category__left'>
           <CategoryTitle title={category.name} />
           <Articles category={category} articles={techArticles} />
         </div>
-        <div className='technology__right'>
+        <div className='category__right'>
           <CategoryTitle title='Top Posts' />
           <TopPosts articles={topPostArticles} />
           <Advertisment />

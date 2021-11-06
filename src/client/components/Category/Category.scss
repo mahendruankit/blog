@@ -1,22 +1,22 @@
 @import '../../variables.scss';
 
-.food {
+.category {
   font-family: $font-family;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-.food__left,
-.food__right {
+.category__left,
+.category__right {
   display: flex;
   flex-direction: column;
 }
 
-.food__left {
-  flex-basis: 65%;
+.category__left {
+  flex-basis: 70%;
 }
 
-.food__right {
-  flex-basis: 35%;
+.category__right {
+  flex-basis: 30%;
 }

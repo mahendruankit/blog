@@ -8,7 +8,7 @@ export default function TopPosts({ articles }) {
     <div className='topPosts'>
       {articles.map((article) => {
         return article.id === 1 ? (
-          <div className='topPost'>
+          <div className='topPost' key={article.id}>
             <Link className='topPost__link__top' to='/home'>
               <div className='topPost__link__top__thumbnail'>
                 <img src={article.thumbnail} alt='Article thumbnail' />

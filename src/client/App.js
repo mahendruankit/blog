@@ -2,11 +2,7 @@ import Header from './components/Header/Header';
 import { Routes, Route } from 'react-router-dom';
 import { BrowserRouter } from 'react-router-dom';
 import Home from './contents/Home/Home';
-import Science from './contents/Science/Science';
-import Technology from './contents/Technology/Technology';
-import Movies from './contents/Movies/Movies';
-import Fitness from './contents/Fitness/Fitness';
-import Food from './contents/Food/Food';
+import Category from './components/Category/Category';
 
 import './App.scss';
 
@@ -18,11 +14,11 @@ function App() {
           <Header />
           <Routes>
             <Route exact path='/' element={<Home />} />
-            <Route path='/science' element={<Science />} />
-            <Route path='/technology' element={<Technology />} />
-            <Route path='/movies' element={<Movies />} />
-            <Route path='/fitness' element={<Fitness />} />
-            <Route path='/food' element={<Food />} />
+            <Route path='/science' element={<Category categoryId={1} />} />
+            <Route path='/technology' element={<Category categoryId={2} />} />
+            <Route path='/movies' element={<Category categoryId={3} />} />
+            <Route path='/fitness' element={<Category categoryId={4} />} />
+            <Route path='/food' element={<Category categoryId={5} />} />
           </Routes>
         </div>
       </div>
