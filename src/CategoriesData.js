@@ -11,7 +11,7 @@ export default [
         title: 'COP26: Quitting coal and rebounding CO2 emissions',
         authorImage: imageResource.authors.ziggy,
         author: 'Ziggy',
-        date: '01/03/2021',
+        date: '01/03/2019',
         minutes: '10',
         thumbnail: imageResource.thumbnails.S1,
         image: imageResource.article.image,
@@ -19,6 +19,7 @@ export default [
           'Countries such as Poland, Vietnam and Chile, which rely heavily on coal - the single biggest contributor to global warming - are committing to move away from it. More than 40 countries have signed up to a statement to quit the use of the fossil fuel, and the UK government says 190 nations and organisations have pledged to stop using it. \n\n  "The end of coal is in sight," says Business Secretary Kwasi Kwarteng. But some of the worlds biggest coal-dependent countries, including Australia, India, China and the US, did not sign up, which makes for "glaring gaps", according to shadow business secretary Ed Miliband. There is also nothing about moving away from oil and gas, he adds. Follow our updates as the COP26 summit focuses on energy.',
         tags: 'Intergovernmental Panel on Climate Change, COP26, Climate Change',
         claps: '9.1',
+        featured: true,
       },
       {
         id: 2,
@@ -33,6 +34,7 @@ export default [
           'The education secretary will also confirm plans to pilot "energy pods" that can replace gas and coal boilers to supply a schools heating and hot water without carbon emissions. \n\n The pods are being tested in some schools first and could be rolled out more widely to other public-sector buildings if successful.Mr Zahawi said that all new schools being built in the country, including 50 this year, would have "net zero in operation".Schools, colleges and nurseries are also being encouraged to improve the biodiversity of their grounds.And from next month, all further education teachers trained via an apprenticeship will be required to integrate sustainability into their teaching.The measures are form a draft sustainability and climate change strategy. These measures will be built on over the next six months - in collaboration with young people, teachers, sustainability experts and environmentalists - before a final strategy is published in April 2022.',
         tags: 'COP26, Climate Change, Edinburgh',
         claps: '7.5',
+        featured: false,
       },
       {
         id: 3,
@@ -47,6 +49,7 @@ export default [
           'The super-rich - many of whom have multiple homes, private jets and superyachts - emit a lot more than others. A recent study that tracked the air travel of celebrities via their social media accounts found some emitted over a thousand tonnes a year. But the global 1% are not just billionaires, or even millionaires - it includes anyone earning over $172,000.This study also looked at the worlds richest 10% - anyone earning over $55,000 - and found emissions were still high. \n\n The richest 10% will emit nine times more carbon than their share.',
         tags: 'COP26, Climate Change, Emissions',
         claps: '7.7',
+        featured: false,
       },
       {
         id: 4,
@@ -62,6 +65,7 @@ export default [
           'The North Sea still contains large quantities of oil and gas but, in the midst of a climate emergency, how much longer can it continue to be extracted? To keep the world safe, scientists say that global heating has to be limited to 1.5C by the end of this century.Earlier this year, the International Energy Agency set out a road map to this which said there should be no investment in new fossil fuel supply projects - in other words no new oil and gas fields. \n\n This causes a problem for oil and gas producers around the world but also for how countries function.',
         tags: 'Wind Power, North Sea oil and gas, Climate Change, Renewable energy',
         claps: '9.7',
+        featured: false,
       },
     ],
   },
@@ -83,6 +87,7 @@ export default [
           '$10m is the largest bounty ever offered for the arrest of a specific cyber-criminal.The ignominious record was previously held by Maksim Yakubets, the alleged mastermind behind another ransomware gang called Evil Corp.The US named and shamed him (along with help from the UK authorities) in 2019.Before that, the record bounty stood at $3m for another alleged cyber-crime boss called Evgeniy Bogachev. \n\n The thing these individuals have in common? They are thought to be living care-free lives in Russia safe from any prospect of arrest from the local police, who routinely ignore western accusations against Russian hackers.Even with their names, pictures and a rough location published by the US, these alleged criminals are safe.The US seems to have even less to go on in terms of unmasking DarkSides leaders, although most research suggests they are also in Russia.So, despite the eye-watering sums being offered by the US, the chances of these criminals facing justice are slim.',
         tags: 'United States, Oil & Gas industry, Cyber-security',
         claps: '9.3',
+        featured: true,
       },
       {
         id: 2,
@@ -97,6 +102,7 @@ export default [
           'This week, I travelled back in time to visit the future. \n\n It has been about 10 years since I first entered the virtual world of Second Life, arguably the internets first attempt at what every tech giant is now racing to build: the so-called metaverse.The term metaverse was coined in the 1990s in a science-fiction novel, Snow Crash, where it served as a virtual-reality successor to the internet, where people live large portions of their lives in virtual environments.Second Life peaked in the late 2000s with millions of users and hundreds of excitable headlines about people devoting hours of their daily lives to live digitally.Since then, I assumed it had died a slow and quiet death. But how wrong I was.The platform seems to have a small, loyal and potentially growing community of "residents", as they call themselves, logging on to experience what our metaverse future could look like.So for this weeks Tech Tent podcast, I dipped back in.',
         tags: 'Gaming, Mark Zuckerberg, Facebook',
         claps: '4.5',
+        featured: false,
       },
       {
         id: 3,
@@ -111,6 +117,7 @@ export default [
           'Instagram has brought back support for Twitter card previews after removing the feature nine years ago. Now, when users share an Instagram link on Twitter, a small preview of the post will be displayed.Instagram controversially removed the feature shortly after being acquired by Facebook in 2012. \n\n Twitter card previews started for some users on Wednesday and will eventually be available to everyone. Instagram and Twitter are both promoting the change.',
         tags: 'Instagram, Twitter',
         claps: '3.7',
+        featured: false,
       },
       {
         id: 4,
@@ -125,6 +132,7 @@ export default [
           'The former police captain was elected this week to take over at the end of mayor Bill de Blasios term in January. Mr Adams said on social media that he wanted to signal his intention to make New York the "centre of the cryptocurrency industry".The value of bitcoin, the worlds largest cryptocurrency, has been highly volatile, since it was created in 2009. \n\n Mr Adam comments appear to be an attempt to one-up the mayor of Miami, Francis Suarez, who had already said in his own Twitter message that he would take his first pay check in bitcoin, after he was re-elected. Mr Suarez has already said he would like to establish Miami as a hub for cryptocurrency innovation. Mr Adams upped the stakes by asking for three months pay in the cryptocurrency.',
         tags: 'Bitcoin, New York City, Cryptocurrency',
         claps: '8.7',
+        featured: false,
       },
     ],
   },
@@ -146,6 +154,7 @@ export default [
           'A dream cast of Sharon Horgan and James McAvoy unite to star in this lockdown comedy-drama about a husband and wife forced to evaluate their relationship when the COVID-19 pandemic forces them into a confined space for what seems like an infinite amount of time. “I hate your face,” says James’s ‘He’ to ‘She’ and that sets the template for a clever, witty situation comedy which feels a little like a stage play —in the best way— about how our lives and relationships have been strained and changed forever by coronavirus. Directed by the esteemed Stephen Daldry (Billy Elliot), viewers be warned: for some couples this may be too close to home.',
         tags: 'Together, Movies',
         claps: '7.1',
+        featured: true,
       },
       {
         id: 2,
@@ -160,13 +169,14 @@ export default [
           'The concept of Horrible Histories needs no introduction (if it does, think history told through the eyes of a toilet-obsessed six-year-old) and the popular CBBC kids show reaches the big-screen with ‘Rotten Romans’. This film documents how the Romans invaded Britain, quelled a Celt rebellion, and introduced public sanitation. \n\n The cast is spectacular, with everyone from a comically evil Kim Cattrall to Kate Nash as warrior queen Boudicca, plus Lee Mack, Sir Derek Jacobi, Alexander Armstrong, and Sanjeev Bhaskar popping up in all manner of roles. We particularly enjoyed Craig Roberts as Emperor Nero and Nick Frost as Arghus but if you blink, you’ll miss another British star. Not for refined tastes, but perfect for younger viewers — an entertaining all-rounder with some decent jokes (“We’re going to have to limit your scroll-time!”).',
         tags: 'Horrible Histories, Movies',
         claps: '4.5',
+        featured: false,
       },
       {
         id: 3,
         title: 'Stan & Ollie (2018)',
         authorImage: imageResource.authors.ziggy,
         author: 'Ziggy',
-        date: '02/01/2021',
+        date: '06/29/2020',
         minutes: '5',
         thumbnail: imageResource.thumbnails.M3,
         image: imageResource.article.image,
@@ -174,6 +184,7 @@ export default [
           'The world’s most popular comedy duo Laurel & Hardy have fallen on hard times towards the end of their career. In Stan & Ollie, they embark on a dismal UK tour in the 1950s, trying to pay off debts and resurrect their film career in this bittersweet portrait of the men’s fragile relationship which is collapsing under the weight of growing resentment, bad health and changing fashions. \n\n Steve Coogan as Stan and John C. Reilly as Ollie absolutely look the part, and the comic actors deliver convincing performances as the Hollywood heroes fallen on hard times. It is pure pathos when Stan throws a bread roll at the back of Ollie’s head  —  what would have once had an audience in stitches is, in context, a sad statement about the end of their friendship.',
         tags: 'Stan & Ollie, Movies',
         claps: '6.7',
+        featured: false,
       },
       {
         id: 4,
@@ -188,6 +199,7 @@ export default [
           'Oscar-winner Steve McQueen turns his focus to race relations in London in the 1970s in Small Axe, an anthology set in the Caribbean community of West London. Each film is jaw-dropping stories that are based on real events. Education is a case in point: it tells the heartbreaking story of 12-year-old Kingsley, who struggles at school because of his undiagnosed dyslexia. \n\n Kingsley is quickly excluded from normal school and sent to a special educational needs school, where it becomes apparent there is a deliberate policy of segregating black children on almost any pretext. Another film, Lovers Rock is a pure recreation of a house party on All Saints Road and we’re not sure any do has been captured with such authenticity – the a cappella rendition of Janet Kay’s Silly Games is worth an award all of its own.',
         tags: 'Bitcoin, New York City, Cryptocurrency',
         claps: '8.7',
+        featured: false,
       },
     ],
   },
@@ -209,6 +221,7 @@ export default [
           'Scientists may have identified a method of safely mimicking the weight-loss benefits of a plant compound that -- despite its harmful side effects -- hold critical answers to developing therapies for obesity.',
         tags: 'Science, Fitness, obesity',
         claps: '8.2',
+        featured: false,
       },
       {
         id: 2,
@@ -223,6 +236,7 @@ export default [
           'Weight loss after gestational diabetes can prevent the onset of type 2 diabetes. \n\n Yet finding the most effective way to lose weight and keep it off can be a challenge, especially for mothers with a new baby. Now, new research suggests that the popular 5:2 or intermittent fasting diet is just as effective as a conventional energy-restricting diet, enabling women greater choice and flexibility when it comes to weight loss.',
         tags: 'Weight loss, Diabetes, Diet',
         claps: '9.5',
+        featured: false,
       },
       {
         id: 3,
@@ -237,6 +251,7 @@ export default [
           'A new study has found that genes can explain up to 72% of the difference in outcome between people after a specific fitness exercise. \n\n The research involved data from 3,012 adults and has identified a number of specific genes which influence the outcomes of different physical activities.',
         tags: 'Exercise, Genes, Cambridge ',
         claps: '3.7',
+        featured: false,
       },
       {
         id: 4,
@@ -252,6 +267,7 @@ export default [
           'A new report finds more than 46,000 cancer cases annually in the United States could be prevented if Americans met the 5 hours per week of moderate-intensity recommended physical activity guidelines.',
         tags: 'America, Exercise, Cancer',
         claps: '5.7',
+        featured: false,
       },
     ],
   },
@@ -273,6 +289,7 @@ export default [
           'Ever wondered if your food has actually gone bad? Australian scientists are developing a sensor that gives real-time information about a food items freshness.If successful, they hope it could help reduce household food waste - a huge global problem.',
         tags: 'Food, Australia, Sensor',
         claps: '9.3',
+        featured: false,
       },
       {
         id: 2,
@@ -288,6 +305,7 @@ export default [
           'The Food Standards Agency has told ITV News that new rules are needed over environmental labelling, as concerns are raised about the inconsistency in the way products are currently being displayed. \n\n The majority of manufacturers do not know or do not show their products carbon footprint, with many consumers potentially believing a "carbon neutral" label means there is no carbon footprint involved in the manufacturing process- which is often not the case. As the COP26 climate summit draws to the end of its first week in Glasgow, new research from OnePoll survey shows 70% of shoppers want more environmental information.',
         tags: 'Food, Standards, Glasgow, COP26',
         claps: '9.5',
+        featured: false,
       },
       {
         id: 3,
@@ -303,6 +321,7 @@ export default [
           'Eight Nottinghamshire restaurants feature in the highly anticipated AA Restaurant Guide 2022. These restaurants are all featured in the AAs guide, which has just been released and gives readers an idea of the best places to visit across the country if they want a meal out.\n\n All of these restaurants received at least one coveted AA rosette, awarded to outstanding restaurants and hotels since 1956. To receive just one Rosette is a rare honour, according to the AAs Restaurant Guide : "Of all the restaurants across the UK, approximately 10% are of a standard worthy of 1 Rosette and above.',
         tags: 'Nottinghamshire, Food Guide',
         claps: '2.7',
+        featured: false,
       },
       {
         id: 4,
@@ -317,6 +336,7 @@ export default [
           'Kenya will in mid-November stop the export of Hass and Fuerte varieties of avocados to prevent the harvesting of immature crops. The ban will then be reviewed in January. This will however not affect other varieties and those who harvest off-season, Head of Horticulture Directorate Benjamin Tito is quoted by Kenyas Business Daily newspaper as saying. \n\n The ban was brought in after traders started picking immature produce to capitalise on the high prices in the market. The move is expected to have an impact on the prices and availability of avocados in overseas markets.',
         tags: 'Kenya, Avocado, Export',
         claps: '9.7',
+        featured: false,
       },
     ],
   },

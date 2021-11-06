@@ -3,7 +3,10 @@ import moment from 'moment';
 import { Link } from 'react-router-dom';
 import './Articles.scss';
 
-export default function Articles({ category, articles }) {
+export default function Articles({ listOfCategoriesAndArticles }) {
+  let category = listOfCategoriesAndArticles.category;
+  let articles = listOfCategoriesAndArticles.articles;
+
   return (
     <div className='articles'>
       {articles.map((article) => {

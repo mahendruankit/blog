@@ -3,7 +3,9 @@ import moment from 'moment';
 import { Link } from 'react-router-dom';
 import './TopPosts.scss';
 
-export default function TopPosts({ category, articles }) {
+export default function TopPosts({ listOfCategoriesAndArticles }) {
+  let category = listOfCategoriesAndArticles.category;
+  let articles = listOfCategoriesAndArticles.articles;
   return (
     <div className='topPosts'>
       {articles.map((article) => {

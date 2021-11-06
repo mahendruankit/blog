@@ -1,0 +1,41 @@
+@import '../../variables.scss';
+
+.featuredArticles {
+  font-family: $font-family;
+  display: flex;
+}
+
+.featuredArticle {
+  margin: 0.5em;
+}
+
+.featuredArticle__thumbnail {
+  position: relative;
+  text-align: center;
+  color: $page-color;
+}
+
+.featuredArticle__thumbnail img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5em;
+}
+
+.featuredArticle__title {
+  text-align: left;
+  font-size: 1.5em;
+  position: absolute;
+  bottom: 2em;
+  left: 6.5em;
+  transform: translate(-50%, -50%);
+}
+
+.featuredArticle__details {
+  font-size: 0.8em;
+  flex-basis: 30%;
+  position: absolute;
+  bottom: 0.5em;
+  left: 6em;
+  transform: translate(-50%, -50%);
+  color: $page-color;
+}
