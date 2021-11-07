@@ -9,8 +9,9 @@
   margin: 0.5em;
 }
 
-.article__link {
+.featuredArticles__article__link {
   text-decoration: none;
+  width: 33%;
 }
 
 .featuredArticle__thumbnail {
@@ -27,9 +28,15 @@
 .featuredArticle__title {
   font-size: 1.5em;
   margin-left: 0.5em;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .featuredArticle__details {
   font-size: 0.8em;
   color: $page-color;
+  padding: 1em;
 }

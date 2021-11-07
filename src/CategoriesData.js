@@ -39,7 +39,7 @@ export default [
       {
         id: 3,
         title: 'COP26: Emissions of rich put climate goals at risk - study',
-        authorImage: imageResource.authors.ziggy,
+        authorImage: imageResource.authors.cookie,
         author: 'Ziggy',
         date: '03/01/2021',
         minutes: '3',
@@ -143,7 +143,8 @@ export default [
     articles: [
       {
         id: 1,
-        title: 'Together (2021)',
+        title:
+          'Together: The Movie (2021) - James McAvoy unite to star in this lockdown comedy-drama',
         authorImage: imageResource.authors.ziggy,
         author: 'Ziggy',
         date: '01/01/2021',

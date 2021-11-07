@@ -37,6 +37,12 @@
 
 .article__link__details__name {
   font-size: 1.5em;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .article__link__details__content {
