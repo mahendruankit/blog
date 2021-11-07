@@ -1,6 +1,7 @@
 import React from 'react';
 import FeaturedArticles from '../../components/FeaturedArticle/FeaturedArticles';
 import LatestArticlesFromAllCategories from '../../components/LatestArticlesFromAllCategories/LatestArticlesFromAllCategories';
+import Category from '../../components/Category/Category';
 import moment from 'moment';
 import Title from '../../components/Title/Title';
 import Categories from '../../../CategoriesData';
@@ -41,16 +42,15 @@ export default function Home() {
     .slice(0, 3);
 
   return (
-    <div className='content'>
-      <div className='home'>
-        <FeaturedArticles featuredList={featuredList} />
-        <Title title='The Latest' />
-        <LatestArticlesFromAllCategories
-          latestArticlesFromAllCategories={latestArticlesFromAllCategories}
-        />
-        <Title title='Latest Articles' />
-        <Title title='Latest Stories' />
-      </div>
+    <div className='home'>
+      <FeaturedArticles featuredList={featuredList} />
+      <Title title='The Latest' />
+      <LatestArticlesFromAllCategories
+        latestArticlesFromAllCategories={latestArticlesFromAllCategories}
+      />
+      <Title title='Latest Articles' />
+      <Category categoryId={1} displayTitle={false}/>
+      <Title title='Latest Stories' />
     </div>
   );
 }

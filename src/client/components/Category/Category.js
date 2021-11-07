@@ -8,7 +8,7 @@ import moment from 'moment';
 
 import './Category.scss';
 
-export default function Category({ categoryId }) {
+export default function Category({ categoryId, displayTitle }) {
   let categoryAndArticlesFromAllCategories = [];
   var category = Categories.filter((c) => c.id === categoryId)[0];
   var articles = category.articles;
@@ -40,19 +40,17 @@ export default function Category({ categoryId }) {
     .slice(0, 3);
 
   return (
-    <div className='content'>
-      <div className='category'>
-        <div className='category__left'>
-          <Title title={category.name} />
-          <Articles listOfCategoriesAndArticles={listOfCategoriesAndArticles} />
-        </div>
-        <div className='category__right'>
-          <Title title='Top Posts' />
-          <TopPosts
-            listOfCategoriesAndArticles={latestArticlesFromAllCategories}
-          />
-          <Advertisment />
-        </div>
+    <div className='category'>
+      <div className='category__left'>
+        {displayTitle ? <Title title={category.name} /> : ''}
+        <Articles listOfCategoriesAndArticles={listOfCategoriesAndArticles} />
+      </div>
+      <div className='category__right'>
+        <Title title='Top Posts' />
+        <TopPosts
+          listOfCategoriesAndArticles={latestArticlesFromAllCategories}
+        />
+        <Advertisment />
       </div>
     </div>
   );
