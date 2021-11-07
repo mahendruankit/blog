@@ -159,7 +159,8 @@ export default [
       },
       {
         id: 2,
-        title: 'Horrible Histories: The Movie (2019)',
+        title:
+          'Horrible Histories: The Movie (2019) - The concept of Horrible Histories needs no introduction ',
         authorImage: imageResource.authors.cookie,
         author: 'Cookie',
         date: '02/01/2021',
@@ -174,7 +175,8 @@ export default [
       },
       {
         id: 3,
-        title: 'Stan & Ollie (2018)',
+        title:
+          'Stan & Ollie: The Movie (2018) - The world’s most popular comedy duo Laurel & Hardy have fallen on hard times towards the end of their career.',
         authorImage: imageResource.authors.ziggy,
         author: 'Ziggy',
         date: '06/29/2020',
@@ -189,7 +191,8 @@ export default [
       },
       {
         id: 4,
-        title: 'Small Axe (2020)',
+        title:
+          'Small Axe: The Movie (2020) - Oscar-winner Steve McQueen turns his focus to race relations in London in the 1970s',
         authorImage: imageResource.authors.ziggy,
         author: 'Ziggy',
         date: '04/01/2021',

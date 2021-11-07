@@ -23,7 +23,7 @@ export default function RelatedArticles({ listOfCategoriesAndArticles }) {
             >
               {index === 0 ? (
                 <div className='relatedArticlesFromAllCategories__article__tag'>
-                  Also tagged
+                  Also tagged: {article.tags}
                 </div>
               ) : (
                 <div className='relatedArticlesFromAllCategories__article__tag'>

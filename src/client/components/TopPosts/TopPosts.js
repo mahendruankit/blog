@@ -35,7 +35,7 @@ export default function TopPosts({ listOfCategoriesAndArticles }) {
                   </div>
                 </div>
                 <div className='topPost__link__top__details__right'>
-                  {list.article.id}
+                  {index + 1}
                 </div>
               </div>
             </Link>
@@ -64,9 +64,7 @@ export default function TopPosts({ listOfCategoriesAndArticles }) {
                     </span>
                   </div>
                 </div>
-                <div className='topPost__link__details__right'>
-                  {list.article.id}
-                </div>
+                <div className='topPost__link__details__right'>{index + 1}</div>
               </div>
             </Link>
             <hr />
