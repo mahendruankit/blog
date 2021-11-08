@@ -4,6 +4,7 @@ import Categories from '../../../CategoriesData';
 import Advertisment from '../../components/Advertisment/Advertisment';
 import Articles from '../../components/Articles/Articles';
 import TopPosts from '../../components/TopPosts/TopPosts';
+import ArtcileGallery from '../../components/ArtcileGallery/ArtcileGallery';
 import moment from 'moment';
 
 import './Category.scss';
@@ -12,6 +13,7 @@ export default function Category({
   categoryId,
   displayTitle,
   requiresPadding,
+  requiresArticleGallery,
 }) {
   let topPostsArticlesFromAllCategories = [];
   var category = Categories.filter((c) => c.id === categoryId)[0];
@@ -47,6 +49,7 @@ export default function Category({
       <div className='category__left'>
         {displayTitle ? <Title title={category.name} /> : ''}
         <Articles listOfCategoriesAndArticles={listOfCategoriesAndArticles} />
+        {requiresArticleGallery ? <ArtcileGallery /> : ''}
       </div>
       <div className='category__right'>
         <Title title='Top Posts' />

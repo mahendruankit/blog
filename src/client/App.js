@@ -22,6 +22,7 @@ function App() {
                   categoryId={1}
                   displayTitle={true}
                   requiresPadding={true}
+                  requiresArticleGallery={false}
                 />
               }
             />
@@ -32,6 +33,7 @@ function App() {
                   categoryId={2}
                   displayTitle={true}
                   requiresPadding={true}
+                  requiresArticleGallery={false}
                 />
               }
             />
@@ -42,6 +44,7 @@ function App() {
                   categoryId={3}
                   displayTitle={true}
                   requiresPadding={true}
+                  requiresArticleGallery={false}
                 />
               }
             />
@@ -52,6 +55,7 @@ function App() {
                   categoryId={4}
                   displayTitle={true}
                   requiresPadding={true}
+                  requiresArticleGallery={false}
                 />
               }
             />
@@ -62,6 +66,7 @@ function App() {
                   categoryId={5}
                   displayTitle={true}
                   requiresPadding={true}
+                  requiresArticleGallery={false}
                 />
               }
             />

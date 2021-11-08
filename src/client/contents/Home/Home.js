@@ -73,7 +73,12 @@ export default function Home() {
             showThumbnail={true}
           />
           <Title title='Latest Articles' />
-          <Category categoryId={1} displayTitle={false} requiresPadding={false}/>
+          <Category
+            categoryId={1}
+            displayTitle={false}
+            requiresPadding={false}
+            requiresArticleGallery={true}
+          />
           <Title title='Latest Stories' />
           <div className='home__spacer'>
             <hr />
