@@ -1,10 +1,11 @@
 import React from 'react';
 import FeaturedArticles from '../../components/FeaturedArticle/FeaturedArticles';
-import LatestArticlesFromAllCategories from '../../components/LatestArticlesFromAllCategories/LatestArticlesFromAllCategories';
+import ArticlesHorizontal from '../../components/ArticlesHorizontal/ArticlesHorizontal';
 import Category from '../../components/Category/Category';
 import moment from 'moment';
 import Title from '../../components/Title/Title';
 import Categories from '../../../CategoriesData';
+import './Home.scss';
 
 export default function Home() {
   let featuredList = [];
@@ -32,25 +33,57 @@ export default function Home() {
     });
   });
 
-  let latestArticlesFromAllCategories =
-    categoryAndArticlesFromAllCategories.sort((a, b) => {
+  let latestArticlesFromAllCategories = categoryAndArticlesFromAllCategories
+    .sort((a, b) => {
       return moment(a.date).diff(b.date);
-    });
-
-  latestArticlesFromAllCategories = latestArticlesFromAllCategories
+    })
     .reverse()
     .slice(0, 3);
 
+  //Calculate latest articles from Category 3
+  let latestArticlesFromCategory3 = [];
+
+  var category = GetCategoryFromId(3);
+  category.articles.forEach((article) => {
+    latestArticlesFromCategory3.push({
+      category: category,
+      article: article,
+      date: moment(article.date).format('MMM DD, YYYY'),
+    });
+  });
+
+  latestArticlesFromCategory3 = latestArticlesFromCategory3
+    .sort((a, b) => {
+      return moment(a.date).diff(b.date);
+    })
+    .reverse();
+
+  function GetCategoryFromId(id) {
+    return Categories.find((c) => c.id === id);
+  }
+
   return (
-    <div className='home'>
-      <FeaturedArticles featuredList={featuredList} />
-      <Title title='The Latest' />
-      <LatestArticlesFromAllCategories
-        latestArticlesFromAllCategories={latestArticlesFromAllCategories}
-      />
-      <Title title='Latest Articles' />
-      <Category categoryId={1} displayTitle={false}/>
-      <Title title='Latest Stories' />
-    </div>
+    <>
+      <div className='content'>
+        <div className='home'>
+          <FeaturedArticles featuredList={featuredList} />
+          <Title title='The Latest' />
+          <ArticlesHorizontal
+            listOfCategoriesAndArticles={latestArticlesFromAllCategories}
+            showThumbnail={true}
+          />
+          <Title title='Latest Articles' />
+          <Category categoryId={1} displayTitle={false} requiresPadding={false}/>
+          <Title title='Latest Stories' />
+          <div className='home__spacer'>
+            <hr />
+          </div>
+          <ArticlesHorizontal
+            listOfCategoriesAndArticles={latestArticlesFromCategory3}
+            showThumbnail={false}
+          />
+        </div>
+      </div>
+    </>
   );
 }

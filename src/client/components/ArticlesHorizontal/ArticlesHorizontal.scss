@@ -1,0 +1,67 @@
+@import '../../variables.scss';
+
+.articlesHorizontal {
+  text-decoration: none;
+  color: $link-color;
+  display: flex;
+  flex-direction: row;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+.articlesHorizontal {
+  font-family: $font-family;
+}
+
+.articlesHorizontal a {
+  text-decoration: none;
+  color: $link-color;
+}
+
+.articlesHorizontal__article {
+  margin: 1em;
+}
+.articlesHorizontal__article__link {
+  display: flex;
+}
+
+.articlesHorizontal__article__link__details__thumbnail {
+  text-align: left;
+}
+
+.articlesHorizontal__article__link__details__thumbnail img {
+  vertical-align: middle;
+  width: 100%;
+  height: auto;
+}
+
+.articlesHorizontal__article__link__details__name {
+  font-size: 1.5em;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.articlesHorizontal__article__details__content {
+  margin-top: 1em;
+  color: $secondary-color;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.articlesHorizontal__article__details__info {
+  margin-top: 1em;
+}
+
+.articlesHorizontal__article__details__info__name {
+  font-weight: 500;
+}
+
+.articlesHorizontal__article__details__info__date {
+  color: $secondary-color;
+}

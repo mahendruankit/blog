@@ -8,8 +8,12 @@ import moment from 'moment';
 
 import './Category.scss';
 
-export default function Category({ categoryId, displayTitle }) {
-  let categoryAndArticlesFromAllCategories = [];
+export default function Category({
+  categoryId,
+  displayTitle,
+  requiresPadding,
+}) {
+  let topPostsArticlesFromAllCategories = [];
   var category = Categories.filter((c) => c.id === categoryId)[0];
   var articles = category.articles;
 
@@ -18,38 +22,35 @@ export default function Category({ categoryId, displayTitle }) {
     articles: articles,
   };
 
-  //Calculate the latest articles from all categories
+  //Calculate the top articles as per claps from all categories
 
   Categories.forEach((category) => {
     category.articles.forEach((article) => {
-      categoryAndArticlesFromAllCategories.push({
+      topPostsArticlesFromAllCategories.push({
         category: category,
         article: article,
-        date: moment(article.date).format('MMM DD, YYYY'),
+        claps: article.claps,
       });
     });
   });
 
-  let latestArticlesFromAllCategories =
-    categoryAndArticlesFromAllCategories.sort((a, b) => {
-      return moment(a.date).diff(b.date);
-    });
+  let topPosts = topPostsArticlesFromAllCategories.sort((a, b) => {
+    return moment(a.claps).diff(b.claps);
+  });
 
-  latestArticlesFromAllCategories = latestArticlesFromAllCategories
-    .reverse()
-    .slice(0, 3);
+  topPosts = topPosts.reverse().slice(0, 3);
+
+  let contentClass = requiresPadding ? 'content' : '';
 
   return (
-    <div className='category'>
+    <div className={`category ${contentClass}`}>
       <div className='category__left'>
         {displayTitle ? <Title title={category.name} /> : ''}
         <Articles listOfCategoriesAndArticles={listOfCategoriesAndArticles} />
       </div>
       <div className='category__right'>
         <Title title='Top Posts' />
-        <TopPosts
-          listOfCategoriesAndArticles={latestArticlesFromAllCategories}
-        />
+        <TopPosts listOfCategoriesAndArticles={topPosts} />
         <Advertisment />
       </div>
     </div>

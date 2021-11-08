@@ -1,0 +1,14 @@
+@import '../../variables.scss';
+
+.home {
+}
+
+.home__spacer {
+  margin: 3em 0 1em 0;
+  hr {
+    border: 1px solid $secondary-color;
+    margin: 0;
+    width: 100%;
+    opacity: 10%;
+  }
+}
