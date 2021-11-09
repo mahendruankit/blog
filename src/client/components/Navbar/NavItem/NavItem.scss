@@ -4,3 +4,8 @@
   margin-right: 3.5rem;
   font-weight: 500;
 }
+@media screen and (max-width: 980px) {
+  .navbar__item {
+    margin-right: 0.4em;
+  }
+}
