@@ -31,11 +31,16 @@ hr {
   border: 1px solid $secondary-color;
 }
 
+.header__hamburger,
+.header__spacer {
+  display: none;
+}
+
 @media screen and (max-width: 980px) {
   .header {
     display: flex;
     text-align: left;
-    padding-bottom: 0.5em;
+    padding-bottom: 1em;
     padding-top: 0;
     box-shadow: 0px 0px 0px 6px rgba(0, 0, 0, 0.06);
   }
@@ -43,18 +48,25 @@ hr {
   .header__title,
   .header__spacer,
   .header__hamburger {
+    display: flex;
     flex-basis: 33.333333%;
   }
 
   .header__hamburger {
-    text-align: right;
-    padding-right: 1em;
-    padding-top: 0.7em;
+    justify-content: right;
+    margin-right: 3em;
+    margin-top: 0.7em;
+    font-size: 1.2em;
+    color: $secondary-color;
+  }
+
+  .header__title {
+    margin: 0.2em 0.1em 0em 3em;
   }
 
   .header__title1 {
-    margin: 0.8em 0.1em 0em 3em;
     font-size: 0.8em;
+    padding-top: 0.5em;
   }
   .header__title2 {
     font-size: 1.7em;
