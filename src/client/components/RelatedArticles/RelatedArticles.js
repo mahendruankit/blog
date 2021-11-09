@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Author from '../../components/Author/Author';
-import './ReactedArticles.scss';
+import './RelatedArticles.scss';
 
 export default function RelatedArticles({ listOfCategoriesAndArticles }) {
   return (
