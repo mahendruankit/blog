@@ -1,6 +1,6 @@
 import React from 'react';
 import Title from '../../components/Title/Title';
-import Categories from '../../../CategoriesData';
+import Categories from '../../resources/CategoriesData';
 import Advertisment from '../../components/Advertisment/Advertisment';
 import Articles from '../../components/Articles/Articles';
 import TopPosts from '../../components/TopPosts/TopPosts';

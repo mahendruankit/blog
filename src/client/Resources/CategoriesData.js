@@ -1,4 +1,4 @@
-import imageResource from './client/resources/images';
+import imageResource from './images';
 
 const CategoriesData = [
   {

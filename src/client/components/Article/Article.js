@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import Categories from '../../../CategoriesData';
+import Categories from '../../resources/CategoriesData';
 import Author from '../../components/Author/Author';
 import Tags from '../../components/Tags/Tags';
 import Claps from '../../components/Claps/Claps';

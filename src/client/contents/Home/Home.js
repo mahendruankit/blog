@@ -4,7 +4,7 @@ import ArticlesHorizontal from '../../components/ArticlesHorizontal/ArticlesHori
 import Category from '../../components/Category/Category';
 import moment from 'moment';
 import Title from '../../components/Title/Title';
-import Categories from '../../../CategoriesData';
+import Categories from '../../resources/CategoriesData';
 import './Home.scss';
 
 export default function Home() {
