@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from '../Navbar/Navbar';
+import { FaBars } from 'react-icons/fa';
 
 import './Header.scss';
 
@@ -14,8 +15,12 @@ export default function Header({ backgroundColor, ...props }) {
         <span className='header__title1'>The</span>
         <span className='header__title2'>Siren</span>
       </div>
+      <div className='header__spacer'> </div>
+      <div className='header__hamburger'>
+        <FaBars />
+      </div>
 
-      <div className='header navbar'>
+      <div className='navbar'>
         <Navbar />
       </div>
       <hr />
