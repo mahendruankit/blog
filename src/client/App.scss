@@ -26,3 +26,9 @@ body {
   color: $link-color;
   padding: 6em 10em 5em 10em;
 }
+
+@media screen and (max-width: 980px) {
+  .content {
+    padding: 6em 1em 5em 1em;
+  }
+}

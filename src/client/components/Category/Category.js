@@ -71,22 +71,24 @@ export default function Category({
   let contentClass = requiresPadding ? 'content' : '';
 
   return (
-    <div className={`category ${contentClass}`}>
-      <div className='category__left'>
-        {displayTitle ? <Title title={category.name} /> : ''}
-        <Articles listOfCategoriesAndArticles={listOfCategoriesAndArticles} />
-        {requiresArticleGallery ? (
-          <ArticleGallery
-            listOfCategoriesAndArticles={latestArticlesFromCategory2}
-          />
-        ) : (
-          ''
-        )}
-      </div>
-      <div className='category__right'>
-        <Title title='Top Posts' />
-        <TopPosts listOfCategoriesAndArticles={topPosts} />
-        <Advertisment />
+    <div className={`${contentClass}`}>
+      <div className='category'>
+        <div className='category__left'>
+          {displayTitle ? <Title title={category.name} /> : ''}
+          <Articles listOfCategoriesAndArticles={listOfCategoriesAndArticles} />
+          {requiresArticleGallery ? (
+            <ArticleGallery
+              listOfCategoriesAndArticles={latestArticlesFromCategory2}
+            />
+          ) : (
+            ''
+          )}
+        </div>
+        <div className='category__right'>
+          <Title title='Top Posts' />
+          <TopPosts listOfCategoriesAndArticles={topPosts} />
+          <Advertisment />
+        </div>
       </div>
     </div>
   );
