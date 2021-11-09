@@ -1,0 +1,115 @@
+@import '../../variables.scss';
+
+.articleGallery__container {
+  font-family: $font-family;
+  margin-bottom: 3em;
+  position: relative;
+  width: 80%;
+  height: 30em;
+}
+
+.articleGallery__article {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.articleGallery__article__img {
+  width: 100%;
+  height: 100%;
+  color: $page-color;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.articleGallery__article__img__details {
+  font-size: 0.8em;
+  color: $page-color;
+  padding: 1em;
+}
+
+#radio__1,
+#radio__2,
+#radio__3,
+#radio__4 {
+  //display: none;
+}
+
+.articleGallery__article__prev,
+.articleGallery__article__next {
+  position: absolute;
+  width: 12%;
+  height: 100%;
+  z-index: 0.5;
+  cursor: pointer;
+  background: rgba(88, 88, 88, 0.4);
+}
+
+.articleGallery__article__prev {
+  left: 0;
+}
+
+.articleGallery__article__next {
+  right: 0;
+}
+
+.articleGallery__nav {
+  width: 100%;
+  height: 1em;
+  bottom: 12%;
+  position: absolute;
+  text-align: center;
+  z-index: 99;
+}
+
+.articleGallery__dot {
+  top: -0.5px;
+  width: 1em;
+  height: 18px;
+  margin: 0 4px;
+  position: relative;
+  border-radius: 50%;
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.articleGallery__article {
+  z-index: -1;
+}
+
+#radio__1:checked ~ #article__1,
+#radio__2:checked ~ #article__2,
+#radio__3:checked ~ #article__3,
+#radio__4:checked ~ #article__4 {
+  z-index: 9;
+}
+
+#radio__1:checked ~ .articleGallery__nav #articleGallery__dot__1,
+#radio__2:checked ~ .articleGallery__nav #articleGallery__dot__2,
+#radio__3:checked ~ .articleGallery__nav #articleGallery__dot__3,
+#radio__4:checked ~ .articleGallery__nav #articleGallery__dot__4 {
+  background: $page-color;
+}
+
+.arrow {
+  border: solid $page-color;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  position: absolute;
+  top: 50%;
+  color: $page-color;
+  margin-left: 50%;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}

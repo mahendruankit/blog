@@ -61,7 +61,6 @@ export default function Home() {
   function GetCategoryFromId(id) {
     return Categories.find((c) => c.id === id);
   }
-
   return (
     <>
       <div className='content'>

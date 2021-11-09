@@ -3,7 +3,7 @@ import moment from 'moment';
 import { Link } from 'react-router-dom';
 import './ArticlesHorizontal.scss';
 
-export default function LatestArticlesFromAllCategories({
+export default function ArticlesHorizontal({
   listOfCategoriesAndArticles,
   showThumbnail,
 }) {

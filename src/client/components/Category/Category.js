@@ -4,7 +4,7 @@ import Categories from '../../../CategoriesData';
 import Advertisment from '../../components/Advertisment/Advertisment';
 import Articles from '../../components/Articles/Articles';
 import TopPosts from '../../components/TopPosts/TopPosts';
-import ArtcileGallery from '../../components/ArtcileGallery/ArtcileGallery';
+import ArticleGallery from '../ArticleGallery/ArticleGallery';
 import moment from 'moment';
 
 import './Category.scss';
@@ -36,11 +36,37 @@ export default function Category({
     });
   });
 
-  let topPosts = topPostsArticlesFromAllCategories.sort((a, b) => {
-    return moment(a.claps).diff(b.claps);
+  let topPosts = topPostsArticlesFromAllCategories
+    .sort((a, b) => {
+      return moment(a.claps).diff(b.claps);
+    })
+    .reverse()
+    .slice(0, 3);
+
+  //Calculate latest articles from Category 2
+
+  let latestArticlesFromCategory2 = [];
+
+  var categoryTwo = GetCategoryFromId(2);
+  categoryTwo.articles.forEach((article) => {
+    latestArticlesFromCategory2.push({
+      category: category,
+      article: article,
+      date: moment(article.date).format('MMM DD, YYYY'),
+    });
   });
 
-  topPosts = topPosts.reverse().slice(0, 3);
+  latestArticlesFromCategory2 = latestArticlesFromCategory2
+    .sort((a, b) => {
+      return moment(a.date).diff(b.date);
+    })
+    .reverse();
+
+  function GetCategoryFromId(id) {
+    return Categories.find((c) => c.id === id);
+  }
+
+  console.log(categoryTwo.articles);
 
   let contentClass = requiresPadding ? 'content' : '';
 
@@ -49,7 +75,13 @@ export default function Category({
       <div className='category__left'>
         {displayTitle ? <Title title={category.name} /> : ''}
         <Articles listOfCategoriesAndArticles={listOfCategoriesAndArticles} />
-        {requiresArticleGallery ? <ArtcileGallery /> : ''}
+        {requiresArticleGallery ? (
+          <ArticleGallery
+            listOfCategoriesAndArticles={latestArticlesFromCategory2}
+          />
+        ) : (
+          ''
+        )}
       </div>
       <div className='category__right'>
         <Title title='Top Posts' />
