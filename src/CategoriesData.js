@@ -1,7 +1,6 @@
 import imageResource from './client/resources/images';
 
-// eslint-disable-next-line import/no-anonymous-default-export
-export default [
+const CategoriesData = [
   {
     id: 1,
     name: 'Science',
@@ -345,3 +344,5 @@ export default [
     ],
   },
 ];
+
+export default CategoriesData;
