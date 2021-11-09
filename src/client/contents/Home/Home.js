@@ -70,6 +70,7 @@ export default function Home() {
           <ArticlesHorizontal
             listOfCategoriesAndArticles={latestArticlesFromAllCategories}
             showThumbnail={true}
+            showBreak={false}
           />
           <Title title='Latest Articles' />
           <Category
@@ -85,7 +86,11 @@ export default function Home() {
           <ArticlesHorizontal
             listOfCategoriesAndArticles={latestArticlesFromCategory3}
             showThumbnail={false}
+            showBreak={true}
           />
+          <div className='home__spacer'>
+            <hr />
+          </div>
         </div>
       </div>
     </>

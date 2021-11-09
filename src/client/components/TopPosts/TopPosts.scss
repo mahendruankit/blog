@@ -79,6 +79,11 @@
 }
 
 .topPost__link__details__name {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
   font-size: 1.3em;
 }
 

@@ -6,6 +6,7 @@ import './ArticlesHorizontal.scss';
 export default function ArticlesHorizontal({
   listOfCategoriesAndArticles,
   showThumbnail,
+  showBreak,
 }) {
   return (
     <div className='articlesHorizontal'>
@@ -44,6 +45,13 @@ export default function ArticlesHorizontal({
                   </span>
                 </div>
               </div>
+              {showBreak === true ? (
+                <div className='articlesHorizontal__article__link'>
+                  <hr />
+                </div>
+              ) : (
+                ''
+              )}
             </Link>
           </div>
         );

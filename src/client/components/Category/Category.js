@@ -41,7 +41,7 @@ export default function Category({
       return moment(a.claps).diff(b.claps);
     })
     .reverse()
-    .slice(0, 3);
+    .slice(0, 4);
 
   //Calculate latest articles from Category 2
 

@@ -27,6 +27,7 @@
 
 .articlesHorizontal__article__link__details__thumbnail {
   text-align: left;
+  margin-bottom: 1em;
 }
 
 .articlesHorizontal__article__link__details__thumbnail img {
@@ -45,10 +46,12 @@
 }
 
 .articlesHorizontal__article__details__content {
+  font-size: small;
+  opacity: 80%;
   margin-top: 1em;
   color: $secondary-color;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -64,4 +67,11 @@
 
 .articlesHorizontal__article__details__info__date {
   color: $secondary-color;
+}
+
+.articlesHorizontal__article__link hr {
+  border: 1px solid $secondary-color;
+  width: 100%;
+  margin: 0em 1em 0em 1em;
+  opacity: 10%;
 }
