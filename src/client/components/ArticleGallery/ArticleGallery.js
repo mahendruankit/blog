@@ -18,7 +18,7 @@ export default function ArticleGallery({ listOfCategoriesAndArticles }) {
             type='radio'
             id={`radio__${id}`}
             className='articleGallery__article__radio'
-            name={`radio__${id}`}
+            name={'images'}
             defaultChecked={id === 1 ? !isChecked : isChecked}
             onChange={handleOnChange}
           />
