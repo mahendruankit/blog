@@ -21,4 +21,15 @@
 }
 
 @media screen and (max-width: 980px) {
+  .category {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .category__left,
+  .category__right {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 0;
+  }
 }

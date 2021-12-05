@@ -63,3 +63,10 @@
 .article__link__details__info__date {
   color: $secondary-color;
 }
+
+@media screen and (max-width: 980px) {
+  .article__link__thumbnail img {
+    height: 14em;
+    max-width: 11em;
+  }
+}

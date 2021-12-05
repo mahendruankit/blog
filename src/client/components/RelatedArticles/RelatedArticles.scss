@@ -70,3 +70,21 @@
   color: $secondary-color;
   opacity: 0.5;
 }
+
+@media screen and (max-width: 980px) {
+  .relatedArticles {
+    font-family: $font-family;
+    background-color: $page-color;
+    padding: 4em 1em 1em 1em;
+    overflow: auto;
+  }
+
+  .relatedArticlesFromAllCategories {
+    flex-direction: column;
+  }
+
+  .relatedArticlesFromAllCategories__article__link__details
+    > .relatedArticlesFromAllCategories__article {
+    display: none;
+  }
+}

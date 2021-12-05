@@ -75,3 +75,11 @@
   margin: 0em 1em 0em 1em;
   opacity: 0.2;
 }
+
+@media screen and (max-width: 980px) {
+  .articlesHorizontal {
+    flex-direction: column;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+}

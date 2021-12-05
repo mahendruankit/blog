@@ -64,3 +64,30 @@
   margin-left: 0.3em;
   opacity: 0.2;
 }
+
+@media screen and (max-width: 980px) {
+  .article__left,
+  .article__right {
+    display: none;
+  }
+
+  .article__centre {
+    flex-basis: 100%;
+  }
+
+  .article__centre__title {
+    font-size: 1.2em;
+  }
+
+  .article__centre__articleImage {
+    text-align: center;
+  }
+
+  .article__centre__articleImage img {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: inline-block;
+    height: 8em;
+    width: auto;
+  }
+}
