@@ -6,6 +6,8 @@
 }
 @media screen and (max-width: 980px) {
   .navbar__item {
-    margin-right: 0.4em;
+    margin: 1em;
+    padding: 1em;
+    border-bottom: 1px solid rgba(210, 199, 199, 0.5);
   }
 }

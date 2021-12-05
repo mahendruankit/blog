@@ -31,4 +31,31 @@
   .navbar {
     display: none;
   }
+
+  .navbar__open {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+
+    ul {
+      list-style: none;
+      list-style-type: none;
+      text-decoration: none;
+      align-items: center;
+      padding: 0;
+    }
+
+    li {
+      display: inline;
+      margin: 1em;
+    }
+
+    a {
+      text-decoration: none;
+      color: $link-color;
+      font-family: $font-family;
+      font-weight: 400;
+      font-size: medium;
+    }
+  }
 }

@@ -4,15 +4,26 @@ import { BrowserRouter } from 'react-router-dom';
 import Home from './contents/Home/Home';
 import Category from './components/Category/Category';
 import Article from './components/Article/Article';
+import { useState } from 'react';
+import Navbar from './components/Navbar/Navbar';
 
 import './App.scss';
 
 function App() {
+  const [navbarOpen, setNavbarOpen] = useState(false);
+
+  const handleMenuToggle = () => {
+    setNavbarOpen(!navbarOpen);
+  };
+
   return (
     <BrowserRouter>
       <div className='app'>
         <div className='page'>
-          <Header />
+          <Header onClick={handleMenuToggle} />
+          <div className={`${navbarOpen ? 'navbar__open' : 'navbar'}`}>
+            <Navbar />
+          </div>
           <Routes>
             <Route exact path='/' element={<Home />} />
             <Route
