@@ -1,6 +1,9 @@
-# Getting Started with Create React App
+# Demo Site
 
-Demo Site URL: https://blog-prep.netlify.app/
+https://blog-prep.netlify.app/
+
+
+# Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
